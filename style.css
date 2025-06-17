@@ -17,7 +17,7 @@ header {
 }
 
 header img {
-  width: 20%;
+  width: 40%;
 }
 
 a {
@@ -131,6 +131,19 @@ h2 {
   border: 2px solid white;
 }
 
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.galerie img {
+  width: 30%;
+  border: 2px solid white;
+  margin: 5px;
+}
+
 .section2 p {
   margin-bottom: 5%;
 }
@@ -143,6 +156,21 @@ h2 {
 
 .parent-contenu-s2 img {
   width: 30%;
+}
+
+.sous-section {
+  display: flex;
+}
+
+.sous-section img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 50px;
+}
+
+.sous-section ul {
+  margin-bottom: 20px;
 }
 
 /* SECTION 3*/
@@ -212,8 +240,93 @@ h2 {
   background-color: #ffffff;
 }
 
-.parent-chart {
-  width: 50%;
+/* PAGE CONTACT*/
+/* --------------------------------------------- */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.contact-image {
+  flex: 1 1 50%;
+  background: url("./images/photo6.jpg") center center/cover no-repeat;
+  min-height: 400px;
+}
+
+.contact-form-wrapper {
+  flex: 1 1 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.contact-form {
+  max-width: 500px;
+  width: 100%;
+}
+
+.contact-form h1 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #222;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.contact-form .row {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .submit-btn {
+  background-color: #ff5e5e;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form .submit-btn:hover {
+  background-color: #e44c4c;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-image {
+    height: 300px;
+  }
+
+  .contact-form-wrapper {
+    padding: 20px;
+  }
 }
 /* FOOTER*/
 /* --------------------------------------------- */

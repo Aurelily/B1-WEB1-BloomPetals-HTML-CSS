@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | BloomPetals</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"><img src="./images/logo-bloom.png" /></a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+          <li><a href="realisations.html">Nos réalisations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contact-container">
+      <div class="contact-image"></div>
+
+      <div class="contact-form-wrapper">
+        <form class="contact-form">
+          <h1>Contactez-nous</h1>
+
+          <label for="prenom">Nom *</label>
+          <div class="row">
+            <input
+              type="text"
+              id="prenom"
+              name="prenom"
+              placeholder="Prénom"
+              required
+            />
+            <input type="text" id="nom" name="nom" placeholder="Nom" required />
+          </div>
+
+          <label for="email">Email *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Votre email"
+            required
+          />
+
+          <label for="message">Votre message *</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Laissez-nous un mot..."
+            required
+          ></textarea>
+
+          <button type="submit" class="submit-btn">Envoyer</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="box-center" id="monFooter">
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+          <li><a href="realisations.html">Nos réalisations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
